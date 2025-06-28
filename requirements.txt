@@ -1,0 +1,4 @@
+streamlit
+torchvision
+torch
+pillow
