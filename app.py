@@ -46,7 +46,7 @@ def hash_image(image):
     return hashlib.md5(image.tobytes()).hexdigest()
 
 # UI
-st.title("⚡ 学習されたピカチュウを当てるなゲーム ⚡️")
+st.title("⚡ 学習されたピカチュウを当てるなゲーム 🔥")
 threshold = st.slider("アウト判定のしきい値（確信度 %）", 90, 100, 95) / 100
 uploaded_file = st.file_uploader("画像をアップロードしてください", type=["jpg", "png", "jpeg"])
 
