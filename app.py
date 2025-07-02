@@ -68,6 +68,6 @@ if uploaded_file:
             st.error(f"❌ アウト！ピカチュウと強く予測（確信度: {confidence*100:.1f}%）")
             # 表示しない（意図的に画像非表示）
         else:
-            st.image(image, caption="アップロード画像", use_column_width=True)
+            st.image(image, caption="アップロード画像", use_container_width=True)
             st.success("✅ セーフ！これは学習されていない画像です")
             st.info(f"モデル予測: {'ピカチュウ' if pred == 1 else 'その他'}（確信度: {confidence*100:.1f}%）")
